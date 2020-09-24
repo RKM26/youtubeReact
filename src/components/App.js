@@ -5,8 +5,8 @@ import VideoList from  './VideoList';
 import VideoDetail from './VideoDetail';
 require('dotenv').config();
 
-const KEY =process.env.REACT_APP_KEY
-console.log(KEY);
+// const KEY =process.env.REACT_APP_KEY
+// console.log(KEY);
 
 class App extends React.Component{
 
@@ -26,7 +26,7 @@ class App extends React.Component{
                 part: 'snippet',
                 type: 'video',
                 maxResults: 5,
-                key: KEY
+                key: process.env.REACT_APP_KEY
             }
         });
         // console.log(response.data.items)
