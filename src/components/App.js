@@ -5,7 +5,7 @@ import VideoList from  './VideoList';
 import VideoDetail from './VideoDetail';
 require('dotenv').config();
 
-const KEY =`${process.env.REACT_APP_KEY}`
+const KEY =process.env.REACT_APP_KEY
 console.log(KEY);
 
 class App extends React.Component{
